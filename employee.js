@@ -7,7 +7,7 @@
      }
  }
  let employee = [];
- var emp = [];
+ let data = {};
 
  function addEmployee(event) {
      event.preventDefault();
@@ -17,11 +17,11 @@
      let address = document.getElementById("address").value;
      let empid = document.getElementById("employee-id").value;
      let designation = document.getElementById("designation").value;
-     let data = new Employee(empid, name, address, designation);
-     employee.push(data);;
-     emp.push(data);
+     data = new Employee(empid, name, address, designation);
+
      //alert("Added Employee Details Successfully...");
  }
+ employee.push(data);
 
  console.log(employee);
 
@@ -38,7 +38,5 @@
  }
 
 
- window.onload = function() {
-     viewEmployee();
- };
+
  export { Employee, addEmployee, viewEmployee, employee };
