@@ -33,8 +33,8 @@
      });
 
      table += '</table>';
+     return table;
 
-     document.getElementById('employeeDetails').innerHTML = table;
  }
 
 
